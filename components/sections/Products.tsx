@@ -21,7 +21,7 @@ export function Products() {
     <section id="products" className="relative py-16 md:py-24">
       <div className="container-page relative">
         {/* decorative clouds — subtly overlapping behind the last cards */}
-        <div className="absolute inset-x-0 -bottom-20 md:-bottom-28 flex justify-between items-end pointer-events-none select-none z-0">
+        <div className="absolute inset-x-0 -bottom-28 md:-bottom-40 flex justify-between items-end pointer-events-none select-none z-0">
           <img src="/assets/clouds.png" alt="" aria-hidden="true" className="w-32 sm:w-52 md:w-[30rem] h-auto" />
           <img src="/assets/clouds.png" alt="" aria-hidden="true" className="w-32 sm:w-52 md:w-[30rem] h-auto scale-x-[-1]" />
         </div>
