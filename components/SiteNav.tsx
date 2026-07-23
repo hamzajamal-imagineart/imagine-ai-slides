@@ -107,8 +107,8 @@ export function SiteNav() {
               href="#install"
               className="inline-flex items-center justify-center h-[34px] px-[16px] rounded-[22px] font-sans text-[13.5px] font-medium tracking-[0.14px] transition-all duration-200"
               style={{
-                background: scrolled ? "#fff" : "#0858f7",
-                color: scrolled ? "#02132b" : "#fff",
+                background: scrolled ? "#fff" : "#0b0f1a",
+                color: scrolled ? "#0b0f1a" : "#fff",
                 boxShadow: scrolled ? "0 2px 8px rgba(0,0,0,0.2)" : "none",
               }}
             >

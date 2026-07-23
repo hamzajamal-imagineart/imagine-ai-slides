@@ -18,9 +18,14 @@ const PRODUCTS: Product[] = [
 
 export function Products() {
   return (
-    <section id="products" className="py-16 md:py-24">
-      <div className="container-page">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+    <section id="products" className="relative py-16 md:py-24">
+      <div className="container-page relative">
+        {/* decorative clouds — subtly overlapping behind the last cards */}
+        <div className="absolute inset-x-0 -bottom-20 md:-bottom-28 flex justify-between items-end pointer-events-none select-none z-0">
+          <img src="/assets/clouds.png" alt="" aria-hidden="true" className="w-32 sm:w-52 md:w-[30rem] h-auto" />
+          <img src="/assets/clouds.png" alt="" aria-hidden="true" className="w-32 sm:w-52 md:w-[30rem] h-auto scale-x-[-1]" />
+        </div>
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-5">
           {PRODUCTS.map((p, i) => (
             <Reveal key={p.title} delay={(i % 2) * 80}>
               <div className="h-full flex items-center gap-5 rounded-3xl bg-white p-6 md:p-7">
@@ -36,12 +41,6 @@ export function Products() {
               </div>
             </Reveal>
           ))}
-        </div>
-
-        {/* decorative clouds below the API / Graphics cards */}
-        <div className="mt-6 flex justify-between items-end pointer-events-none select-none">
-          <img src="/assets/clouds.png" alt="" aria-hidden="true" className="w-40 md:w-72 h-auto" />
-          <img src="/assets/clouds.png" alt="" aria-hidden="true" className="w-40 md:w-72 h-auto scale-x-[-1]" />
         </div>
       </div>
     </section>

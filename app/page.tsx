@@ -22,7 +22,7 @@ function CtaBand() {
       <div className="container-page relative">
         <Reveal>
           <span id="pricing" className="sr-only">Start Creating</span>
-          <h2 className="font-display font-medium capitalize text-white tracking-[-0.5px] leading-[1.05] text-[clamp(26px,4.2vw,54px)] whitespace-nowrap mx-auto">
+          <h2 className="font-display font-medium capitalize text-white tracking-[-0.5px] leading-[1.05] text-[clamp(26px,4.2vw,54px)] md:whitespace-nowrap max-w-[16ch] md:max-w-none mx-auto">
             Where Good Ideas Come To Life
           </h2>
           <div className="flex flex-wrap items-center justify-center gap-3 mt-8">
@@ -46,12 +46,24 @@ export default function Home() {
           className="relative"
           style={{
             background:
-              "linear-gradient(180deg, #ffffff 0%, #CDDAFA 14%, #A8D1FF 30%, #AFE7FC 54%, #E8EEFC 82%, #ffffff 100%)",
+              "linear-gradient(180deg, #ffffff 0%, #DCEEFF 14%, #BFE4FF 30%, #CFF0FF 54%, #EAF5FF 82%, #ffffff 100%)",
           }}
         >
-          <Products />
-          <LogoStrip />
-          <Features />
+          {/* artistic film-grain over the sky gradient */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 z-0 mix-blend-soft-light opacity-[0.5]"
+            style={{
+              backgroundImage:
+                "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+              backgroundSize: "140px 140px",
+            }}
+          />
+          <div className="relative z-10">
+            <Products />
+            <LogoStrip />
+            <Features />
+          </div>
         </div>
         <Testimonials />
         <FaqSection />
