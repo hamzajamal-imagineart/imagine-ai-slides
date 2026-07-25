@@ -5,31 +5,31 @@ export interface FaqItem {
 
 export const FAQ: FaqItem[] = [
   {
-    q: "What is the best AI Slides?",
-    a: "We think AI Slides is the best. It understands your goals, analyzes your documents, and structures information logically — turning a prompt, an outline, or an existing file into a polished, ready-to-present deck in minutes.",
+    q: "Is the generated deck actually editable?",
+    a: "Yes. Every slide is built from real elements, text, shapes, charts, and images, not flat renders. Click anything and change it, or ask the agent, and your manual edits are preserved.",
   },
   {
-    q: "How do I use AI Slides?",
-    a: "Describe your presentation in plain language and upload any reference material. Review and refine the AI-generated outline, then click create. Everything appears on the canvas where you can edit text, generate images, and adjust themes before exporting to PDF or PPT.",
+    q: "What formats can I export to?",
+    a: "Editable PowerPoint (PPTX), shareable PDF, and per-slide images (PNG). The PowerPoint you download stays editable and looks exactly like what you made.",
   },
   {
-    q: "How do I choose the right AI Slides tool?",
-    a: "Look for real understanding of your content, conversational editing, flexible themes and templates, and reliable export options. AI Slides delivers all of these, so your first draft is usually good enough to present.",
+    q: "How long does a deck take to generate?",
+    a: "Around 100 seconds from a single prompt to a finished deck. Decks heavy on AI-generated images can take a little longer.",
   },
   {
-    q: "Do I need design skills to use AI Slides?",
-    a: "Not at all. AI Slides handles layout, images, and styling for you, and every change is just one prompt away. You can create beautiful, professional presentations without any design experience.",
+    q: "Can I bring my own material?",
+    a: "Yes. A sentence or two is enough to start, and you can drop in files worth presenting.",
   },
   {
-    q: "Can I edit my presentation after downloading it as PowerPoint?",
-    a: "Yes. Export to PowerPoint or PDF and keep editing offline in your preferred app, or present directly using the built-in presentation mode. Your presentation works wherever you need it.",
+    q: "How do templates and themes work?",
+    a: "Start from a curated template to set the structure, then pick a theme. The palette, typography, and spacing carry through every slide it generates.",
   },
   {
-    q: "Is my data secure when using AI Slides?",
-    a: "Yes. Your content and uploaded files are handled securely and used only to generate your presentation.",
+    q: "Can I change just one slide?",
+    a: "Yes. Ask the agent to change a specific slide, or click any element and edit it by hand. Your earlier edits stay put.",
   },
   {
-    q: "What's the difference between Classic and Studio mode?",
-    a: "Classic mode gives you hands-on control over individual elements. Studio mode uses AI image generation to create complete slides as images, which you refine through prompts instead of manual adjustments.",
+    q: "How many slides can it generate?",
+    a: "Between 3 and 12 slides per generation. Pick a range that fits the story, and add more in the editor.",
   },
 ];

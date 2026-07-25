@@ -21,8 +21,11 @@ export function Testimonials() {
       <div className="container-page">
         <Reveal>
           <h2 className="font-display font-semibold capitalize text-content-primary tracking-[-1px] leading-[1.05] text-center mx-auto max-w-[18ch] text-[clamp(34px,5vw,64px)]">
-            Join The Teams Rethinking How They Create
+            Decks People Actually Shipped
           </h2>
+          <p className="font-sans text-content-secondary text-[17px] leading-[1.6] text-center max-w-[46ch] mx-auto mt-5">
+            From pitch rooms to classrooms, what happens when the deck builds itself.
+          </p>
         </Reveal>
       </div>
 
@@ -42,14 +45,9 @@ export function Testimonials() {
                 {t.quote}
               </blockquote>
               <figcaption className="mt-6 flex items-center gap-3">
-                <img
-                  src={t.avatar}
-                  alt={t.name}
-                  width={48}
-                  height={48}
-                  loading="lazy"
-                  className="w-12 h-12 rounded-full object-cover shrink-0 bg-white ring-2 ring-white"
-                />
+                <span className="w-12 h-12 rounded-full shrink-0 bg-brand-gradient text-white flex items-center justify-center text-[16px] font-medium">
+                  {t.name.charAt(0)}
+                </span>
                 <span className="flex flex-col">
                   <span className="text-[15px] font-medium text-content-primary leading-tight">{t.name}</span>
                   <span className="text-[13px] text-content-secondary leading-tight mt-0.5">{t.title}</span>

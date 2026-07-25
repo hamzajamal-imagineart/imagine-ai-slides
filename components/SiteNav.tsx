@@ -1,27 +1,20 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 
 import { useState, useEffect } from "react";
 
 const NAV_LINKS = [
-  { label: "Products", href: "#products" },
-  { label: "Solutions", href: "#features" },
-  { label: "About", href: "#customers" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "Features", href: "#products" },
+  { label: "How It Works", href: "#how-it-works" },
+  { label: "Reviews", href: "#customers" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 function Wordmark({ light }: { light: boolean }) {
   const color = light ? "#ffffff" : "#002253";
   return (
     <span className="inline-flex items-center gap-2">
-      <span
-        className="inline-flex items-center justify-center w-[26px] h-[26px] rounded-[8px] bg-brand-gradient shrink-0"
-        aria-hidden="true"
-      >
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
-          <rect x="3" y="4" width="18" height="13" rx="2.5" stroke="#fff" strokeWidth="2" />
-          <path d="M8 21h8" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      </span>
+      <img src="/assets/imagine-logo.svg" alt="ImagineArt" className="w-[26px] h-[26px] rounded-[8px] shrink-0" />
       <span
         className="font-display font-semibold text-[19px] tracking-[-0.4px] transition-colors duration-300"
         style={{ color }}

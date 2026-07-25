@@ -1,55 +1,66 @@
 /* eslint-disable @next/next/no-img-element */
 
-const BASE = "https://www.imagine.art";
-
 const COLUMNS: { heading: string; links: { label: string; href: string }[] }[] = [
   {
-    heading: "AI Studios",
+    heading: "Features",
     links: [
-      { label: "Image Studio", href: `${BASE}/image` },
-      { label: "Video Studio", href: `${BASE}/video` },
-      { label: "Audio Studio", href: `${BASE}/audio-studio` },
-      { label: "Film Studio", href: `${BASE}/ai-film-studio` },
-      { label: "Workflow", href: `${BASE}/flow` },
-      { label: "Enterprise", href: `${BASE}/business/enterprise` },
-      { label: "Teams", href: `${BASE}/teams-plan` },
+      { label: "AI Chat", href: "#" },
+      { label: "AI Search Engine", href: "#" },
+      { label: "AI Image Generator", href: "#" },
+      { label: "AI Document Generator", href: "#" },
     ],
   },
   {
-    heading: "Tools",
+    heading: "AI Models",
     links: [
-      { label: "AI Image Generator", href: `${BASE}/ai-image-generator` },
-      { label: "AI Video Generator", href: `${BASE}/ai-video-generator` },
-      { label: "AI Audio Generator", href: `${BASE}/audio-studio` },
-      { label: "AI Text-to-Speech", href: `${BASE}/audio/text-to-speech` },
-      { label: "AI Music Generator", href: `${BASE}/audio/music/elevenlabs-music` },
+      { label: "Gemini 3 Pro", href: "#" },
+      { label: "Gemini 3 Flash", href: "#" },
+      { label: "GPT-5.2 Pro", href: "#" },
+      { label: "GPT-5.2", href: "#" },
+      { label: "Claude Opus 4.5", href: "#" },
+      { label: "Claude 4.5 Sonnet", href: "#" },
+      { label: "Grok 4", href: "#" },
+      { label: "30+ AI Models", href: "#" },
     ],
   },
   {
-    heading: "Apps",
+    heading: "AI Translation Apps",
     links: [
-      { label: "Video Translate", href: `${BASE}/apps/video-translate` },
-      { label: "HeyGen Avatar", href: `${BASE}/apps/heygen-avatar` },
+      { label: "Translate English to Chinese", href: "#" },
+      { label: "Translate English to Spanish", href: "#" },
+      { label: "Translate English to Japanese", href: "#" },
+      { label: "Translate English to Urdu", href: "#" },
+      { label: "Translate English to Hindi", href: "#" },
+      { label: "Translate Chinese to English", href: "#" },
     ],
   },
   {
-    heading: "Contact Us",
+    heading: "Blogs",
     links: [
-      { label: "Contact Sales", href: `${BASE}/teams-plan/contact-us` },
-      { label: "Book a Demo", href: "https://cal.com/team/imagineart/imagineart-customer-assist" },
+      { label: "ChatGPT Alternatives", href: "#" },
+      { label: "GPT-5.2 Overview", href: "#" },
+      { label: "Gemini 2.5 Pro vs Gemini 3 Pro", href: "#" },
+      { label: "JSON Prompting Guide", href: "#" },
+      { label: "Best System Prompts", href: "#" },
+      { label: "Write Like a Human with ChatGPT", href: "#" },
     ],
   },
   {
-    heading: "Community",
+    heading: "Company",
     links: [
-      { label: "Discord", href: "https://discord.com/invite/z7kjUyvAbv" },
-      { label: "Twitter / X", href: "https://twitter.com/Imagine_aiart" },
-      { label: "Instagram", href: "https://www.instagram.com/imagineartofficial" },
+      { label: "Help & Support", href: "#" },
+      { label: "Plans & Pricing", href: "#pricing" },
+      { label: "Chatly Help Center", href: "#" },
+      { label: "Blog", href: "#" },
+      { label: "News", href: "#" },
     ],
   },
   {
-    heading: "Pricing",
-    links: [{ label: "See Plans", href: `${BASE}/subscription` }],
+    heading: "Legal",
+    links: [
+      { label: "Privacy Policy", href: "#" },
+      { label: "Terms & Conditions", href: "#" },
+    ],
   },
 ];
 
@@ -69,24 +80,21 @@ export function SiteFooter() {
       <div className="max-w-[1240px] mx-auto px-5 md:px-10 pt-12 md:pt-16 pb-8">
         <div className="flex flex-col md:flex-row items-start justify-between gap-10 md:gap-12 flex-wrap">
           {/* Brand + app badges */}
-          <div className="w-full md:w-52 shrink-0">
+          <div className="w-full md:w-56 shrink-0">
             <span className="inline-flex items-center gap-2">
-              <span className="inline-flex items-center justify-center w-[26px] h-[26px] rounded-[8px] bg-white/15 shrink-0" aria-hidden="true">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
-                  <rect x="3" y="4" width="18" height="13" rx="2.5" stroke="#fff" strokeWidth="2" />
-                  <path d="M8 21h8" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
-                </svg>
-              </span>
+              <img src="/assets/imagine-logo.svg" alt="ImagineArt" className="w-[26px] h-[26px] rounded-[8px] shrink-0" />
               <span className="font-display font-semibold text-[19px] tracking-[-0.4px] text-white">AI&nbsp;Slides</span>
             </span>
-            <div className="mt-5 flex flex-wrap gap-2.5">
-              <a href="#" aria-label="Download on the App Store" className="inline-block">
-                <img src="/assets/appstore.svg" alt="Download on the App Store" className="h-10 w-auto" />
-              </a>
-              <a href="#" aria-label="Get it on Google Play" className="inline-block">
-                <img src="/assets/googleplay.png" alt="Get it on Google Play" className="h-10 w-auto" />
-              </a>
-            </div>
+            <p className="text-[13px] leading-[1.6] text-white/55 mt-4">
+              A product by <span className="text-white/90 font-medium">Vyro</span>. Trusted by thousands of professionals
+              worldwide.
+            </p>
+            <a
+              href="https://computer-125.animagine.ai/computer/agent/slides"
+              className="inline-flex items-center justify-center h-10 px-4 mt-5 rounded-[10px] bg-white text-[#0b0f1a] font-sans text-[13.5px] font-medium hover:bg-white/90 transition-colors"
+            >
+              Get Started for Free
+            </a>
           </div>
 
           {/* Link grid */}
@@ -120,7 +128,7 @@ export function SiteFooter() {
       <div className="max-w-[1240px] mx-auto px-5 md:px-10 pb-8">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 pt-5 border-t border-white/[0.15] flex-wrap">
           <div className="flex items-center gap-0.5 flex-wrap">
-            <span className="text-[12px] text-white/70">© 2026 AI Slides, Inc. All rights reserved.</span>
+            <span className="text-[12px] text-white/70">© 2026 Vyro. All rights reserved.</span>
             <button type="button" className="text-[12px] text-white/70 px-3 bg-transparent border-none cursor-pointer hover:text-white transition-colors">
               Manage Cookie Preferences
             </button>

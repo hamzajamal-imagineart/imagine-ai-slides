@@ -51,27 +51,27 @@ export function Hero() {
           <div className="flex-1 lg:w-[44%] min-w-0">
             <Reveal delay={80}>
               <h1 className="font-display font-medium capitalize text-content-primary tracking-[-1px] leading-[1.04] text-[clamp(34px,4.6vw,56px)]">
-                Create Beautiful Presentations Online With AI
+                Turn One Prompt Into A Finished Presentation
               </h1>
             </Reveal>
             <Reveal delay={160}>
-              <p className="font-sans text-content-secondary text-[18px] leading-[1.7] max-w-[44ch] mt-6 tracking-[-0.005em]">
-                Describe your idea and AI Slides walks you through simple steps to a polished, professional
-                presentation. Trusted by thousands of professionals worldwide.
+              <p className="font-sans text-content-secondary text-[18px] leading-[1.7] max-w-[46ch] mt-6 tracking-[-0.005em]">
+                AI Slides plans the story, designs every slide, and hands you a fully editable deck, charts, images, and
+                all. You say what it&apos;s about. It handles how it looks.
               </p>
             </Reveal>
             <Reveal delay={240}>
               <div className="flex flex-wrap items-center gap-3 mt-8">
-                <ButtonLink href="#install" variant="brand" size="lg">
-                  Start For Free
+                <ButtonLink href="https://computer-125.animagine.ai/computer/agent/slides" variant="brand" size="lg">
+                  Generate your deck
                 </ButtonLink>
-                <ButtonLink href="#features" variant="white" size="lg">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="mr-1">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                  Watch Video
+                <ButtonLink href="#how-it-works" variant="white" size="lg">
+                  See how it works
                 </ButtonLink>
               </div>
+              <p className="font-sans text-content-tertiary text-[13.5px] mt-5">
+                No design skills needed · Fully editable output · Exports to PPTX, PDF &amp; images
+              </p>
             </Reveal>
           </div>
 
