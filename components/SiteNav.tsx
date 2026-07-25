@@ -70,7 +70,7 @@ export function SiteNav() {
               "max-width 0.48s cubic-bezier(0.22,1,0.36,1), padding 0.48s cubic-bezier(0.22,1,0.36,1), background 0.48s cubic-bezier(0.22,1,0.36,1), box-shadow 0.48s cubic-bezier(0.22,1,0.36,1)",
           }}
         >
-          <a href="#top" className="inline-flex items-center shrink-0 no-underline" aria-label="AI Slides home">
+          <a href="https://www.imagine.art/computer/agent/slides" target="_blank" rel="noopener noreferrer" className="inline-flex items-center shrink-0 no-underline" aria-label="AI Slides home">
             <Wordmark light={scrolled} />
           </a>
 
@@ -97,7 +97,9 @@ export function SiteNav() {
 
           <div className="hidden lg:flex items-center gap-3 shrink-0">
             <a
-              href="#install"
+              href="https://www.imagine.art/computer/agent/slides"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center h-[34px] px-[16px] rounded-[22px] font-sans text-[13.5px] font-medium tracking-[0.14px] transition-all duration-200"
               style={{
                 background: scrolled ? "#fff" : "#0b0f1a",
@@ -135,7 +137,9 @@ export function SiteNav() {
           style={{ animation: "mobileMenuIn 0.22s cubic-bezier(0.4,0,0.2,1) forwards" }}
         >
           <div className="flex items-center justify-between px-6 py-[18px] shrink-0">
-            <Wordmark light={false} />
+            <a href="https://www.imagine.art/computer/agent/slides" target="_blank" rel="noopener noreferrer" className="inline-flex items-center" aria-label="AI Slides home">
+              <Wordmark light={false} />
+            </a>
             <button
               onClick={() => setMenuOpen(false)}
               className="flex items-center justify-center p-1 border-none bg-transparent cursor-pointer"
@@ -166,7 +170,9 @@ export function SiteNav() {
             <div className="w-[calc(100%-48px)] h-px bg-[rgba(0,34,83,0.08)] my-4" />
 
             <a
-              href="#install"
+              href="https://www.imagine.art/computer/agent/slides"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               className="bg-fill-brand inline-flex items-center justify-center h-11 px-6 rounded-[14px] font-sans text-[14px] font-medium text-white"
             >

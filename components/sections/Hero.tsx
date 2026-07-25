@@ -62,7 +62,7 @@ export function Hero() {
             </Reveal>
             <Reveal delay={240}>
               <div className="flex flex-wrap items-center gap-3 mt-8">
-                <ButtonLink href="https://computer-125.animagine.ai/computer/agent/slides" variant="brand" size="lg">
+                <ButtonLink href="https://www.imagine.art/computer/agent/slides" variant="brand" size="lg">
                   Generate your deck
                 </ButtonLink>
                 <ButtonLink href="#how-it-works" variant="white" size="lg">

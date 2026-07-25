@@ -44,14 +44,9 @@ export function Testimonials() {
               <blockquote className="font-sans text-content-primary text-[17px] leading-[1.55] m-0 min-h-[84px]">
                 {t.quote}
               </blockquote>
-              <figcaption className="mt-6 flex items-center gap-3">
-                <span className="w-12 h-12 rounded-full shrink-0 bg-brand-gradient text-white flex items-center justify-center text-[16px] font-medium">
-                  {t.name.charAt(0)}
-                </span>
-                <span className="flex flex-col">
-                  <span className="text-[15px] font-medium text-content-primary leading-tight">{t.name}</span>
-                  <span className="text-[13px] text-content-secondary leading-tight mt-0.5">{t.title}</span>
-                </span>
+              <figcaption className="mt-6 flex flex-col">
+                <span className="text-[15px] font-medium text-content-primary leading-tight">{t.name}</span>
+                <span className="text-[13px] text-content-secondary leading-tight mt-0.5">{t.title}</span>
               </figcaption>
             </figure>
           ))}
