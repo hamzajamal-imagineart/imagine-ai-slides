@@ -24,7 +24,7 @@ const variants: Record<Variant, string> = {
   ghost:
     "bg-transparent text-content-primary border border-border-secondary transition-colors hover:bg-primary-100/[0.04] hover:border-border-tertiary",
   white:
-    "bg-white text-content-primary border border-[rgba(0,34,83,0.16)] shadow-[0_1px_3px_rgba(0,34,83,0.06)] transition-colors hover:bg-white/90 hover:border-[rgba(0,34,83,0.24)]",
+    "bg-white text-content-primary border border-[rgba(0,34,83,0.42)] shadow-[0_1px_3px_rgba(0,34,83,0.06)] transition-colors hover:bg-white/90 hover:border-[rgba(0,34,83,0.6)]",
   muted: "bg-[#EDEDED] text-content-primary transition-colors hover:bg-[#E3E3E3]",
 };
 
