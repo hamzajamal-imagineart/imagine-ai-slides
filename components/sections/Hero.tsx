@@ -16,16 +16,11 @@ function HeroShowcase() {
       />
 
       <div className="relative">
-        {/* hot air balloon card peeking behind, bottom-right */}
-        <div className="absolute -bottom-12 right-0 w-[58%] rounded-[24px] overflow-hidden shadow-[0_24px_60px_rgba(0,34,83,0.18)] rotate-[3deg] -z-10 hidden sm:block">
-          <img src="/assets/hotairballoon.png" alt="" aria-hidden="true" className="block w-full h-auto" />
-        </div>
-
         {/* main deck card */}
-        <div className="relative rounded-[26px] border border-border-primary bg-white shadow-[0_30px_70px_rgba(0,34,83,0.20)] overflow-hidden rotate-[-1.5deg]">
+        <div className="relative rounded-[18px] border border-border-primary bg-white shadow-[0_30px_70px_rgba(0,34,83,0.2)] overflow-hidden">
           <img
-            src="/assets/marketing-tactics.png"
-            alt="Editing a presentation about marketing tactics in AI Slides"
+            src="/assets/hero-image.png"
+            alt="A presentation title slide being edited in AI Slides"
             className="block w-full h-auto"
           />
           {/* floating chip */}

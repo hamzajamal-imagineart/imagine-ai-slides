@@ -22,6 +22,17 @@ function CtaBand() {
           "radial-gradient(ellipse 90% 85% at 50% 118%, #16397a 0%, #08163a 52%, #030a1e 100%)",
       }}
     >
+      {/* subtle dotted pattern */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage: "radial-gradient(rgba(255,255,255,0.09) 1px, transparent 1px)",
+          backgroundSize: "24px 24px",
+          maskImage: "radial-gradient(ellipse 80% 70% at 50% 40%, #000 30%, transparent 78%)",
+          WebkitMaskImage: "radial-gradient(ellipse 80% 70% at 50% 40%, #000 30%, transparent 78%)",
+        }}
+      />
       <StarsBackground
         aria-hidden="true"
         className="absolute inset-0 z-0"

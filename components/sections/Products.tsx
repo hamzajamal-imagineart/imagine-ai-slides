@@ -11,7 +11,7 @@ const PRODUCTS: Product[] = [
   {
     title: "Truly editable, top to bottom",
     body: "Every slide is built from real elements, text, shapes, charts, images, not renders. Click anything, change everything.",
-    img: "/assets/presentations.png",
+    img: "/assets/slide-philosophy.png",
   },
   {
     title: "Pixel-perfect PPTX export",
@@ -21,22 +21,22 @@ const PRODUCTS: Product[] = [
   {
     title: "Themes set the direction",
     body: "Pick a theme and every slide follows, palette, typography, and spacing land on-brand without touching a style panel.",
-    img: "/assets/ai-graphics.png",
+    img: "/assets/pick-style.png",
   },
   {
     title: "Edit your way",
     body: "Ask the agent for the change you want, or drag, resize, and restyle it yourself. Both work, your manual edits are preserved.",
-    img: "/assets/api.png",
+    img: "/assets/edit-your-way.png",
   },
   {
     title: "A curated set of templates",
     body: "Start from hand-crafted templates and let AI fill the structure with your story instead of a blank first slide.",
-    img: "/assets/websites.png",
+    img: "/assets/templates.jpg",
   },
   {
     title: "Images that match your topic",
     body: "AI-generated visuals tailored to your content and placed where they belong, no stock-photo safari required.",
-    img: "/assets/social-media.png",
+    img: "/assets/slide-botanical.png",
   },
 ];
 

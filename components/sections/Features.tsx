@@ -30,7 +30,7 @@ const FEATURES: Feature[] = [
     eyebrow: "Step 03",
     heading: "Generate, then make it yours",
     body: "Watch the deck stream in slide by slide. Ask the agent for changes, or click any element and edit it by hand.",
-    img: "/assets/step-generate.png",
+    img: "/assets/editor-dashboard.png",
     pillBg: "#ecebfb",
     pillText: "#5b3fd6",
   },

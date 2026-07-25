@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Reveal } from "@/components/primitives/Reveal";
 
 const TEMPLATES = ["Etching", "Editorial", "Pixel", "Vellum", "Dossier", "Whiteboard", "Sketch"];
@@ -12,15 +13,26 @@ export function Templates() {
   return (
     <section className="py-16 md:py-24 border-t border-border-primary overflow-hidden">
       <div className="container-page">
-        <Reveal className="max-w-[720px]">
-          <h2 className="font-display font-semibold capitalize text-content-primary tracking-[-0.5px] leading-[1.08] text-[clamp(30px,4vw,50px)]">
-            Set The Direction. Keep The Control.
-          </h2>
-          <p className="font-sans text-content-secondary text-[17px] leading-[1.7] mt-5 max-w-[56ch]">
-            Start from a curated template, then pick a theme, the palette, typography, and spacing carry through every
-            slide it generates.
-          </p>
-        </Reveal>
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+          <Reveal className="lg:w-[45%]">
+            <h2 className="font-display font-semibold capitalize text-content-primary tracking-[-0.5px] leading-[1.08] text-[clamp(30px,4vw,50px)]">
+              Set The Direction. Keep The Control.
+            </h2>
+            <p className="font-sans text-content-secondary text-[17px] leading-[1.7] mt-5 max-w-[52ch]">
+              Start from a curated template, then pick a theme, the palette, typography, and spacing carry through every
+              slide it generates.
+            </p>
+          </Reveal>
+          <Reveal direction="right" className="lg:w-[55%] w-full">
+            <div className="rounded-2xl border border-border-primary overflow-hidden bg-white shadow-[0_24px_60px_rgba(0,34,83,0.12)]">
+              <img
+                src="/assets/pick-style.png"
+                alt="Choosing a visual style and template in AI Slides"
+                className="block w-full h-auto"
+              />
+            </div>
+          </Reveal>
+        </div>
       </div>
 
       {/* templates marquee */}
